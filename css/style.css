@@ -228,8 +228,10 @@ section .container .owl-nav {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.grid--4-cols {
+.grid--3-cols {
   padding: 8rem 3.2rem 0 3.2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10rem;
 }
 
 .heading-article {
