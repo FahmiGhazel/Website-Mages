@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Trial</title>
+    <title>Travel Lobang: Adventure Begins!</title>
 
    
     <!-- Custom Style -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
 
      <!--Google Fonts-->
      <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,42 +22,28 @@
   </head>
   <body>
     <!----------------- Navigation ----------------->
-    <nav class="nav">
-      <div class="nav-menu flex-row">
-        <div class="nav-brand">
-          <a href="#" class="brand-logo">Travel-Lobang</a>
-        </div>
-        <div class="toggle-collapse">
-          <div class="toggle-icon">
-            <i class="fas fa-bars"></i>
-          </div>
-        </div>
-        <div>
-          <ul class="nav-list">
-            <li class="nav-link">
-              <a href="#">Home</a>
-            </li>
-            <li class="nav-link">
-              <a href="#">Destinations</a>
-            </li>
-            <li class="nav-link">
-              <a href="#">Itinerary</a>
-            </li>
-            <li class="nav-link">
-              <a href="#">GoLocal!</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <div class="wrapper">
-           <input type="text" class="input" placeholder="Where are you going?">
-           <button type="button" class="trigger_search"><i class="fas fa-search"></i></button>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="Omnifood logo" src="images/logo.jpeg" />
+      </a>
 
-    </nav>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#how">Itinerary</a></li>
+          <li><a class="main-nav-link" href="#meals">Destination</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Go Local!</a>
+          </li>
+          <li><a class="main-nav-link nav-cta" href="#articles">Explore Now</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
     <!----x------------ Navigation ------------x---->
 
     <!----------------- Main Content --------------->
@@ -64,7 +51,7 @@
     <main>
       <!---------- Site Title ---------->
 
-      <section class="site-title">
+      <section class="section-hero">
         <div class="site-background">
         <h3 class="title-1">Tours & Travels</h3>
         <h1 class="title-2">Amazing Place on Earth</h1>
@@ -75,7 +62,7 @@
          
 
       <!----- Latest Article Carousel ----->
-      <section class="section-meals" id="meals">
+      <section class="section-meals" id="articles">
 
 <div class="container">
   <p class="heading-article">Trending Articles</p>
@@ -389,7 +376,7 @@
                   </select>
                 </div>
 
-                <button class="btn btn--form">Sign up now</button>
+                <button class="btn--form">Sign up now</button>
 
                 <!-- <input type="checkbox" />
                 <input type="number" /> -->
@@ -398,7 +385,7 @@
             <div
               class="cta-img-box"
               role="img"
-              aria-label="Woman enjoying food"
+              aria-label="Community Travelers"
             ></div>
           </div>
         </div>
@@ -408,9 +395,18 @@
     <footer class="footer">
       <div class="container grid grid--footer">
         <div class="logo-col">
-          <!-- <a href="#" class="footer-logo">
-            <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
-          </a> -->
+          
+
+          
+
+          <a href="#" class="footer-logo">
+            <img class="footer-img-logo" alt="Omnifood logo" src="images/logo.jpeg" />
+          </a>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by Omnifood, Inc.
+            <br> All rights reserved.</br>
+          </p>
 
           <ul class="social-links">
             <li>
@@ -429,12 +425,9 @@
               ></a>
             </li>
           </ul>
-
-          <p class="copyright">
-            Copyright &copy; <span class="year">2027</span> by Omnifood, Inc.
-            All rights reserved.
-          </p>
         </div>
+
+        
 
         <div class="address-col">
           <p class="footer-heading">Contact us</p>
@@ -507,6 +500,10 @@
     <script
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
 
   </body>
