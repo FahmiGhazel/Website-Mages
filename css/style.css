@@ -336,6 +336,18 @@ section .container .owl-nav {
   justify-content: center;
 }
 
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
 .btn--left {
   /* In relation to PARENTE ELEMENT */
   left: 7%;
@@ -396,12 +408,7 @@ section .container .owl-nav {
 }
 
 .cta-img-box {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(235, 151, 78, 0.35),
-      rgba(230, 125, 34, 0.35)
-    ),
-    url("../img/eating.jpg");
+  background-image: url("../images/community.jpg");
   background-size: cover;
   background-position: center;
 }
