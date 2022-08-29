@@ -95,30 +95,6 @@ h3 {
   color: white;
 }
 
-.nav .social {
-  padding: 3.8rem 0;
-}
-
-.nav .social i {
-  padding: 0 0.3rem;
-}
-
-.nav .social .fa-facebook-f:hover {
-  color: #3b5998;
-}
-
-.nav .social .fa-instagram:hover {
-  color: purple;
-}
-
-.nav .social .fa-twitter:hover {
-  color: #00acee;
-}
-
-.nav .social .fa-youtube:hover {
-  color: #ff0000;
-}
-
 /* ----x---------- navbar ---------x----- */
 
 /* ------------ Main Content ------------ */

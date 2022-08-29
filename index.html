@@ -48,11 +48,9 @@
           </ul>
         </div>
         <div>
-          <div class="social text-gray">
-            <a href="#"><i class="fa-brands fa-2x fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-2x fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-2x fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-2x fa-youtube"></i></a>  
+          <div class="wrapper">
+           <input type="text" class="input" placeholder="Where are you going?">
+           <button type="button" class="trigger_search"><i class="fas fa-search"></i></button>
           </div>
         </div>
       </div>
@@ -195,7 +193,7 @@
       <!--x-- Latest Article Carousel --x-->
 
       <!----- Discover Now Carousel ----->
-      <section class="section-meals" id="discover">
+      <section class="section-meals" id="discover" data-carousel>
 
         <div class="container">
           <p class="heading-article">Discover Now</p>
@@ -276,7 +274,7 @@
                 </div>
         
         
-                <button class="btn btn--left">
+                <button class="btn btn--left" data-carousel-button="prev">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="btn-icon"
@@ -292,7 +290,7 @@
                     />
                   </svg>
                 </button>
-                <button class="btn btn--right">
+                <button class="btn btn--right" data-carousel-button="next">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="btn-icon"
