@@ -1,8 +1,4 @@
 @media (max-width: 59em) {
-  html {
-    /* 8px / 16px = 0.5 = 50% */
-    font-size: 50%;
-  }
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
