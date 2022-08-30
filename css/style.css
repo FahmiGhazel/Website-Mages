@@ -42,7 +42,7 @@ h3 {
 }
 
 .logo {
-  height: 2.2rem;
+  height: 3.2rem;
 }
 
 .main-nav-list {
@@ -223,12 +223,45 @@ main .section-hero {
   justify-content: center;
 }
 
+.wrapper {
+  display: absolute;
+}
+
+.trigger_search {
+  border: 0;
+  border-radius: 20rem;
+  width: 40px;
+  height: 40px;
+  display: absolute;
+  justify-content: center;
+  align-items: center;
+  outline: 0;
+  cursor: pointer;
+}
+
+.input {
+  border-radius: 10rem;
+  border: 0;
+  outline: 0;
+  transition: 0.25s ease-in-out all;
+  width: 0;
+  padding: 0;
+  margin-right: -25px;
+  height: 40px;
+}
+
+.input-open {
+  width: 20vh;
+  padding: 0 50px;
+  margin-right: 10px;
+}
+
 main .section-hero h1,
 h3 {
   margin: 0.4rem;
 }
 
-main .section-hero .btn-explore {
+/* main .section-hero .btn-explore {
   margin: 1.8rem;
   background: white;
   border: none;
@@ -237,7 +270,7 @@ main .section-hero .btn-explore {
   padding: 1.4rem 2.6rem;
   font-size: 1.2rem;
   display: inline-block;
-}
+} */
 
 main .section-hero .site-background {
   padding-top: 20rem;
@@ -490,6 +523,7 @@ section .container .owl-nav {
   /* color: #45260a; */
   color: inherit;
   margin-bottom: 3.2rem;
+  font-size: 2.6rem;
 }
 
 .cta-text {
