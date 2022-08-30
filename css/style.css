@@ -5,8 +5,7 @@ body {
 
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: "poppins";
-  font-family: "ubuntu";
+  font-family: "Rubik", sans-serif;
 }
 
 a {
@@ -281,6 +280,10 @@ main .section-hero .site-background {
 /* -x--- Site Title ---x- */
 
 /* ---- Feature Title ---- */
+
+.feature {
+  text-align: center;
+}
 
 .feature-icon {
   color: #e67e22;
@@ -638,6 +641,7 @@ section .container .owl-nav {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  padding-inline-start: 0;
 }
 
 .footer-link:link,
