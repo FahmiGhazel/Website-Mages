@@ -815,8 +815,7 @@ section .container .owl-nav {
   position: relative;
   width: 200px;
   height: 200px;
-  top: 3rem;
-  left: 18rem;
+  left: 20;
   transform-style: preserve-3d;
   animation: rotate 30s linear infinite;
 }
@@ -829,7 +828,7 @@ section .container .owl-nav {
   height: 100%;
   transform-origin: center;
   transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) * 45deg)) translateZ(325px);
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
 }
 
 .slider span img {
@@ -841,7 +840,6 @@ section .container .owl-nav {
   border-radius: 30px;
   object-fit: cover;
   transition: 2s;
-  cursor: pointer;
 }
 
 .slider span:hover img {
