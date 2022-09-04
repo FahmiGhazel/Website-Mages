@@ -921,9 +921,9 @@ section .container .owl-nav {
 }
 
 /* ---------- SITE CONTENT ----------*/
-.site-content {
+.site-content-section {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 70fr 30fr;
   margin-top: 8rem;
 }
 
