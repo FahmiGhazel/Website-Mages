@@ -529,7 +529,8 @@
                 </div>
         
                 <div class="newsletter-form" id="form">
-                  <input type="email" name="" id="" placeholder="Your Email" required />
+                  <input type="text" name="" id="email" placeholder="Your Email" onkeydown="validation()" />
+                  <span id="text"></span>
                   <button type="submit" id="btn">Subscribe</button>
                 </div>
         
@@ -560,7 +561,7 @@
           <ul class="social-links">
             <li>
               <a class="footer-link" href="#"
-                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+                ><ion-icon class="social-icon" name="logo-instagram"></
               ></a>
             </li>
             <li>

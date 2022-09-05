@@ -33,11 +33,6 @@
     />
     <link rel="icon" href="img/favicon.png" />
 
-    <script
-      src="https://kit.fontawesome.com/05b98f9769.js"
-      crossorigin="anonymous"
-    ></script>
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
@@ -81,13 +76,25 @@
         </button>
         <ul data-slides>
           <li class="slide" data-active>
-            <img src="/images/3car-siniti.jpg" alt="Potatoe Head Restaurant" />
+            <img
+              src="/images/3car-siniti.jpg"
+              alt="Potatoe Head Restaurant"
+              data-aos="zoom-in-down"
+            />
           </li>
           <li class="slide">
-            <img src="/images/4car-siniti.jpg" alt="HDB Skyline" />
+            <img
+              src="/images/4car-siniti.jpg"
+              alt="HDB Skyline"
+              data-aos="zoom-in-down"
+            />
           </li>
           <li class="slide">
-            <img src="/images/2car-siniti.jpg" alt="Merlion Statue" />
+            <img
+              src="/images/2car-siniti.jpg"
+              alt="Merlion Statue"
+              data-aos="zoom-in-down"
+            />
           </li>
         </ul>
       </div>
@@ -101,24 +108,436 @@
     </div>
     <!----x------- Typewriter Animation -------x---->
 
-    <!------------- Currency Converter ------------->
-    <!-- <div class="currency-container">
-      <h1>CURRENCY CONVERTER</h1>
-      <div class="box">
-        <div class="box-left">
-          <select name="currency" class="currency"></select>
-          <input type="number" name="" id="input" min="1" />
+    <!--------- Travel Information Contents --------->
+
+    <section id="travel-information">
+      <div class="secondary-container">
+        <div>
+          <h2 class="travel-info">
+            <i class="fa-solid fa-circle-info"></i> Travel Information
+          </h2>
         </div>
-        <div class="box-right">
-          <select name="currency" class="currency"></select>
-          <input type="number" name="" id="result" disabled />
+
+        <div class="travel-info flex-row">
+          <div class="info-box">
+            <i class="fa-solid fa-dollar-sign fa-4x info-icon"></i>
+            <p class="info-para">CURRENCY: SGD</p>
+          </div>
+          <div class="info-box">
+            <i class="fa-solid fa-clock fa-4x info-icon"></i>
+            <p class="info-para">TIME ZONE: GMT + 8 HOURS</p>
+          </div>
+          <div class="info-box">
+            <i class="fa-solid fa-language fa-4x info-icon"></i>
+            <p class="info-para">ENGISH, MALAY, TAMIL & MANDARIN</p>
+          </div>
+          <div class="info-box">
+            <i class="fa-solid fa-plug-circle-check fa-4x info-icon"></i>
+            <p class="info-para">TYPE G: 240V/50H</p>
+          </div>
         </div>
       </div>
-      <!-- Main Container Button -->
-    <!-- <button class="btn" id="btn">CONVERT NOW!</button>
-    </div> -->
-    -->
-    <!----x-------- Currency Converter --------x---->
+    </section>
+    <!---x----- Travel Information Contents -----x--->
+
+    <!-------- Prices In Singapore Contents --------->
+    <section id="price-information">
+      <div class="price-container">
+        <div>
+          <h2 class="price-info">
+            <i class="fa-solid fa-money-bill"></i>Cost of Living In Singapore
+          </h2>
+        </div>
+
+        <div class="price-info flex-row">
+          <div class="info-box">
+            <i class="fa-solid fa-utensils"></i>
+            <p class="info-para">LUNCHTIME MENU</p>
+            <span>$6 - $14</span>
+          </div>
+          <div class="info-box">
+            <i class="fa-solid fa-cow"></i>
+            <p class="info-para">1L FRESH MILK</p>
+            <span>$3.30 - $3.50</span>
+          </div>
+          <div class="info-box">
+            <i class="fa-solid fa-smoking"></i>
+            <p class="info-para">1 PACK OF CIGGARETS</p>
+            <span>$14 - $15</span>
+          </div>
+          <div class="info-box">
+            <i class="fa-solid fa-film"></i>
+            <p class="info-para">
+              MOVIE TICKETS FOR 2</p>
+              <span>$27</span>
+            </p>
+          </div>
+          <!-- <div class="info-box-bottom">
+            <i class="fa-solid fa-plug-circle-check fa-4x info-icon"></i>
+            <p class="info-para">TYPE G: 240V/50H</p>
+          </div>
+          <div class="info-box-bottom">
+            <i class="fa-solid fa-plug-circle-check fa-4x info-icon"></i>
+            <p class="info-para">TYPE G: 240V/50H</p>
+          </div>
+          <div class="info-box-bottom">
+            <i class="fa-solid fa-plug-circle-check fa-4x info-icon"></i>
+            <p class="info-para">TYPE G: 240V/50H</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!---x---- Prices In Singapore Contents ----x---->
+    
+    <div class="currency-exchange">
+      <h1>Currency Convertor</h1>
+      <div class="box">
+        <div class="left_box">
+          <select name="currency" class="currency"></select>
+          <input type="number" name="" id="num" />
+        </div>
+        <div class="right_box">
+          <select name="currency" class="currency"></select>
+          <input type="text" name="" id="ans" disabled />
+        </div>
+      </div>
+      <button class="btn-exchange" id="btn-exchange">Convert</button>
+    </div>
+
+    <!----- Latest Article Carousel ----->
+    <section class="section-articles" id="articles">
+      <div class="container">
+        <p class="heading-article">3 Days 2 Nights</p>
+        <div class="grid">
+          <div
+            class="article"
+            data-aos="fade-right"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
+            <img
+              src="images/band.jpg"
+              class="article-img"
+              alt="Musical Performance"
+            />
+            <div class="article-content">
+              <div class="article-tags">
+                <span class="tag tag--vegetarian">Singapore</span>
+              </div>
+              <p class="article-title">
+                Singapore Music Festival Returns! It's now bigger & better!
+              </p>
+              <div>
+                <i class="fa-solid fa-user fa-3x"></i>
+                <span class="author-name">Fahmi Ghazel</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="article"
+            data-aos="fade-right"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
+            <img
+              src="images/beerfest.jpg"
+              class="article-img"
+              alt="Japanese Gyozas"
+            />
+            <div class="article-content">
+              <div class="article-tags">
+                <span class="tag tag--vegetarian">Singapore</span>
+              </div>
+              <p class="article-title">
+                Beerfest Asia 2022 is heading to Singpore with more flavors!
+              </p>
+              <div>
+                <i class="fa-solid fa-user fa-3x"></i>
+                <span class="author-name">Heintze Malack</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="article"
+            data-aos="fade-left"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
+            <img
+              src="images/alley.jpg"
+              class="article-img"
+              alt="Avocado Salad"
+            />
+            <div class="article-content">
+              <div class="article-tags">
+                <span class="tag tag--vegan">Singapore</span>
+                <span class="tag tag--paleo">#Tips</span>
+              </div>
+              <p class="article-title">
+                Neighbourhoods You Need to Explore In Singapore in 1 day!
+              </p>
+              <div>
+                <i class="fa-solid fa-user fa-3x"></i>
+                <span class="author-name">Rizqin Rasheed</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="article"
+            data-aos="fade-left"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
+            <img
+              src="images/ilight museum.jpg"
+              class="article-img"
+              alt="Avocado Salad"
+            />
+            <div class="article-content">
+              <div class="article-tags">
+                <span class="tag tag--vegan">Singapore</span>
+                <span class="tag tag--paleo">Arts</span>
+              </div>
+              <p class="article-title">
+                Future World: Museum Lighting shows Objectivity Signs
+              </p>
+              <div>
+                <i class="fa-solid fa-user fa-3x"></i>
+                <span class="author-name">Xiao Mi Long</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--x-- Latest Article Carousel --x-->
+
+    <!----- Discover Now Carousel ----->
+    <section class="section-articles" id="discover" data-carousel>
+      <div class="container">
+        <p class="heading-article">4 Days 3 Nights</p>
+        <div class="grid">
+          <div
+            class="article"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
+            <img
+              src="images/Dis 1.jpg"
+              class="article-img"
+              alt="Musical Performance"
+            />
+            <div class="article-content">
+              <div class="article-tags">
+                <span class="tag tag--vegetarian">Singapore</span>
+              </div>
+              <p class="article-title">
+                Singapore Music Festival Returns! It's now bigger & better!
+              </p>
+              <div>
+                <i class="fa-solid fa-user fa-3x"></i>
+                <span class="author-name">Fahmi Ghazel</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="article"
+            data-aos="fade-down"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
+            <img
+              src="images/Dis 2.jpg"
+              class="article-img"
+              alt="Japanese Gyozas"
+            />
+            <div class="article-content">
+              <div class="article-tags">
+                <span class="tag tag--vegetarian">Singapore</span>
+              </div>
+              <p class="article-title">
+                Beerfest Asia 2022 is heading to Singpore with more flavors!
+              </p>
+              <div>
+                <i class="fa-solid fa-user fa-3x"></i>
+                <span class="author-name">Heintze Malack</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="article"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
+            <img
+              src="images/Dis 3.jpg"
+              class="article-img"
+              alt="Avocado Salad"
+            />
+            <div class="article-content">
+              <div class="article-tags">
+                <span class="tag tag--vegan">Singapore</span>
+                <span class="tag tag--paleo">#Tips</span>
+              </div>
+              <p class="article-title">
+                Neighbourhoods You Need to Explore In Singapore in 1 day!
+              </p>
+              <div>
+                <i class="fa-solid fa-user fa-3x"></i>
+                <span class="author-name">Rizqin Rasheed</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="article"
+            data-aos="fade-down"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
+            <img
+              src="images/Dis 4.jpg"
+              class="article-img"
+              alt="Avocado Salad"
+            />
+            <div class="article-content">
+              <div class="article-tags">
+                <span class="tag tag--vegan">Singapore</span>
+                <span class="tag tag--paleo">Arts</span>
+              </div>
+              <p class="article-title">
+                Future World: Museum Lighting between Objectivity Signs
+              </p>
+              <div>
+                <i class="fa-solid fa-user fa-3x"></i>
+                <span class="author-name">Xiao Mi Long</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--x-- Discover Now Carousel --x-->
+
+    <!----- Discover Now Carousel ----->
+    <section class="section-articles" id="discover" data-carousel>
+      <div class="container">
+        <p class="heading-article">5 Days 4 Nights</p>
+        <div class="grid">
+          <div
+            class="article"
+            data-aos="fade-down"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
+            <img
+              src="images/Dis 1.jpg"
+              class="article-img"
+              alt="Musical Performance"
+            />
+            <div class="article-content">
+              <div class="article-tags">
+                <span class="tag tag--vegetarian">Singapore</span>
+              </div>
+              <p class="article-title">
+                Singapore Music Festival Returns! It's now bigger & better!
+              </p>
+              <div>
+                <i class="fa-solid fa-user fa-3x"></i>
+                <span class="author-name">Fahmi Ghazel</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="article"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
+            <img
+              src="images/Dis 2.jpg"
+              class="article-img"
+              alt="Japanese Gyozas"
+            />
+            <div class="article-content">
+              <div class="article-tags">
+                <span class="tag tag--vegetarian">Singapore</span>
+              </div>
+              <p class="article-title">
+                Beerfest Asia 2022 is heading to Singpore with more flavors!
+              </p>
+              <div>
+                <i class="fa-solid fa-user fa-3x"></i>
+                <span class="author-name">Heintze Malack</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="article"
+            data-aos="fade-down"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
+            <img
+              src="images/Dis 3.jpg"
+              class="article-img"
+              alt="Avocado Salad"
+            />
+            <div class="article-content">
+              <div class="article-tags">
+                <span class="tag tag--vegan">Singapore</span>
+                <span class="tag tag--paleo">#Tips</span>
+              </div>
+              <p class="article-title">
+                Neighbourhoods You Need to Explore In Singapore in 1 day!
+              </p>
+              <div>
+                <i class="fa-solid fa-user fa-3x"></i>
+                <span class="author-name">Rizqin Rasheed</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="article"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
+            <img
+              src="images/Dis 4.jpg"
+              class="article-img"
+              alt="Avocado Salad"
+            />
+            <div class="article-content">
+              <div class="article-tags">
+                <span class="tag tag--vegan">Singapore</span>
+                <span class="tag tag--paleo">Arts</span>
+              </div>
+              <p class="article-title">
+                Future World: Museum Lighting between Objectivity Signs
+              </p>
+              <div>
+                <i class="fa-solid fa-user fa-3x"></i>
+                <span class="author-name">Xiao Mi Long</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--x-- Discover Now Carousel --x-->
 
     <script src="./itinerary.js"></script>
     <!-- Jquery Library -->
@@ -130,5 +549,10 @@
     <script>
       AOS.init();
     </script>
+
+    <script
+      src="https://kit.fontawesome.com/05b98f9769.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
