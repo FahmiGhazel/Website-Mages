@@ -39,7 +39,7 @@
     <!----------------- Navigation ----------------->
     <header class="header">
       <a href="index.html">
-        <img class="logo" alt="Omnifood logo" src="images/logo.jpeg" />
+        <img class="logo" alt="Travel Lobang logo" src="images/logo.png" />
       </a>
 
       <nav class="main-nav">
@@ -66,43 +66,27 @@
     <!----x------------ Navigation ------------x---->
 
     <!--------------- Image Carousel --------------->
-    <section aria-label="Newest Photos">
-      <div class="carousel" data-carousel>
-        <button class="carousel-button prev" data-carousel-button="prev">
-          &#8701;
-        </button>
-        <button class="carousel-button next" data-carousel-button="next">
-          &#8702;
-        </button>
-        <ul data-slides>
-          <li class="slide" data-active>
-            <img
-              src="/images/3car-siniti.jpg"
-              alt="Potatoe Head Restaurant"
-              data-aos="zoom-in-down"
-            />
-          </li>
-          <li class="slide">
-            <img
-              src="/images/4car-siniti.jpg"
-              alt="HDB Skyline"
-              data-aos="zoom-in-down"
-            />
-          </li>
-          <li class="slide">
-            <img
-              src="/images/2car-siniti.jpg"
-              alt="Merlion Statue"
-              data-aos="zoom-in-down"
-            />
-          </li>
-        </ul>
-      </div>
-    </section>
+
+    <div id="slider" class="section-itinerary">
+      <ul id="slideWrap">
+        <li>
+          <img src="images/2car-siniti.jpg" alt="" class="slider-photos" />
+        </li>
+        <li>
+          <img src="images/3car-siniti.jpg" alt="" class="slider-photos" />
+        </li>
+        <li>
+          <img src="images/4car-siniti.jpg" alt="" class="slider-photos" />
+        </li>
+      </ul>
+      <a id="prev" href="#">&#8810;</a>
+      <a id="next" href="#">&#8811;</a>
+    </div>
+
     <!----x---------- Image Carousel ----------x---->
 
     <!------------ Typewriter Animation ------------>
-    <div class="container">
+    <div class="typewriter-container">
       <span class="text first-text">Explore Singapore In</span>
       <span class="text sec-text">5 Days 4 Nights</span>
     </div>
@@ -114,26 +98,30 @@
       <div class="secondary-container">
         <div>
           <h2 class="travel-info">
-            <i class="fa-solid fa-circle-info"></i> Travel Information
+            <i class="fa-solid fa-circle-info"></i> <br />
+            Travel Information
           </h2>
         </div>
 
-        <div class="travel-info flex-row">
-          <div class="info-box">
-            <i class="fa-solid fa-dollar-sign fa-4x info-icon"></i>
-            <p class="info-para">CURRENCY: SGD</p>
+        <div class="container grid grid--4-cols">
+          <div class="info">
+            <ion-icon class="info-icon" name="cash-outline"></ion-icon>
+            <p class="info-title">CURRENCY: SGD</p>
           </div>
-          <div class="info-box">
-            <i class="fa-solid fa-clock fa-4x info-icon"></i>
-            <p class="info-para">TIME ZONE: GMT + 8 HOURS</p>
+          <div class="info">
+            <ion-icon class="info-icon" name="time-outline"></ion-icon>
+            <p class="info-title">TIME ZONE: GMT + 8 HOURS</p>
           </div>
-          <div class="info-box">
-            <i class="fa-solid fa-language fa-4x info-icon"></i>
-            <p class="info-para">ENGISH, MALAY, TAMIL & MANDARIN</p>
+          <div class="info">
+            <ion-icon class="info-icon" name="chatbubbles-outline"></ion-icon>
+            <p class="info-title">ENGISH, MALAY, TAMIL & MANDARIN</p>
           </div>
-          <div class="info-box">
-            <i class="fa-solid fa-plug-circle-check fa-4x info-icon"></i>
-            <p class="info-para">TYPE G: 240V/50H</p>
+          <div class="info">
+            <ion-icon
+              class="info-icon"
+              name="battery-charging-outline"
+            ></ion-icon>
+            <p class="info-title">TYPE G: 240V/50H</p>
           </div>
         </div>
       </div>
@@ -145,52 +133,35 @@
       <div class="price-container">
         <div>
           <h2 class="price-info">
-            <i class="fa-solid fa-money-bill"></i>Cost of Living In Singapore
+            <i class="fa-solid fa-money-bill"></i> <br />
+            Cost of Living In Singapore
           </h2>
         </div>
 
-        <div class="price-info flex-row">
-          <div class="info-box">
-            <i class="fa-solid fa-utensils"></i>
-            <p class="info-para">LUNCHTIME MENU</p>
-            <span>$6 - $14</span>
+        <div class="container grid grid--4-cols">
+          <div class="info">
+            <ion-icon class="info-icon" name="restaurant-outline"></ion-icon>
+            <p class="info-title">LUNCH TIME MENU: $6-$14</p>
           </div>
-          <div class="info-box">
-            <i class="fa-solid fa-cow"></i>
-            <p class="info-para">1L FRESH MILK</p>
-            <span>$3.30 - $3.50</span>
+          <div class="info">
+            <ion-icon class="info-icon" name="wine-outline"></ion-icon>
+            <p class="info-title">1 GLASS OF WINE: $6.30-$9.50</p>
           </div>
-          <div class="info-box">
-            <i class="fa-solid fa-smoking"></i>
-            <p class="info-para">1 PACK OF CIGGARETS</p>
-            <span>$14 - $15</span>
+          <div class="info">
+            <ion-icon class="info-icon" name="nutrition-outline"></ion-icon>
+            <p class="info-title">1 PACK OF APPLES: $4-$6</p>
           </div>
-          <div class="info-box">
-            <i class="fa-solid fa-film"></i>
-            <p class="info-para">
-              MOVIE TICKETS FOR 2</p>
-              <span>$27</span>
-            </p>
+          <div class="info">
+            <ion-icon class="info-icon" name="ticket-outline"></ion-icon>
+            <p class="info-title">MOVIE TICKETS FOR 2: $20</p>
           </div>
-          <!-- <div class="info-box-bottom">
-            <i class="fa-solid fa-plug-circle-check fa-4x info-icon"></i>
-            <p class="info-para">TYPE G: 240V/50H</p>
-          </div>
-          <div class="info-box-bottom">
-            <i class="fa-solid fa-plug-circle-check fa-4x info-icon"></i>
-            <p class="info-para">TYPE G: 240V/50H</p>
-          </div>
-          <div class="info-box-bottom">
-            <i class="fa-solid fa-plug-circle-check fa-4x info-icon"></i>
-            <p class="info-para">TYPE G: 240V/50H</p>
-          </div> -->
         </div>
       </div>
     </section>
     <!---x---- Prices In Singapore Contents ----x---->
-    
+
     <div class="currency-exchange">
-      <h1>Currency Convertor</h1>
+      <h1>Currency Converter</h1>
       <div class="box">
         <div class="left_box">
           <select name="currency" class="currency"></select>
@@ -276,7 +247,7 @@
                 <span class="tag tag--paleo">#Tips</span>
               </div>
               <p class="article-title">
-                Neighbourhoods You Need to Explore In Singapore in 1 day!
+                Neighbourhoods You Need to Explore In Singapore!
               </p>
               <div>
                 <i class="fa-solid fa-user fa-3x"></i>
@@ -387,7 +358,7 @@
                 <span class="tag tag--paleo">#Tips</span>
               </div>
               <p class="article-title">
-                Neighbourhoods You Need to Explore In Singapore in 1 day!
+                Neighbourhoods You Need to Explore In Singapore!
               </p>
               <div>
                 <i class="fa-solid fa-user fa-3x"></i>
@@ -499,7 +470,7 @@
                 <span class="tag tag--paleo">#Tips</span>
               </div>
               <p class="article-title">
-                Neighbourhoods You Need to Explore In Singapore in 1 day!
+                Neighbourhoods You Need to Explore In Singapore!
               </p>
               <div>
                 <i class="fa-solid fa-user fa-3x"></i>
@@ -539,7 +510,86 @@
 
     <!--x-- Discover Now Carousel --x-->
 
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="footer-img-logo"
+              alt="Travel Lobang logo"
+              src="images/logo.png"
+            />
+          </a>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by Travel-Lobang,
+            Inc. All rights reserved.
+          </p>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">70 Shenton Way, 079118, Singapore</p>
+            <p>
+              <a class="footer-link" href="tel:62353535">62353535</a><br />
+              <a class="footer-link" href="mailto:hello@omnifood.com"
+                >hello@travelobang.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Travel-Lobang</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
     <script src="./itinerary.js"></script>
+    <script src="./general.js"></script>
     <!-- Jquery Library -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="./index.js"></script>

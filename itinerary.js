@@ -1,22 +1,57 @@
 //--------- CAROUSEL SLIDER BUTTONS ---------//
-const buttons = document.querySelectorAll("[data-carousel-button]");
 
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const offset = button.dataset.carouselButton === "next" ? 1 : -1;
-    const slides = button
-      .closest("[data-carousel]")
-      .querySelector("[data-slides]");
+var responsiveSlider = function () {
+  var slider = document.getElementById("slider");
+  var sliderWidth = slider.offsetWidth;
+  var slideList = document.getElementById("slideWrap");
+  var count = 1;
+  var items = slideList.querySelectorAll("li").length;
+  var prev = document.getElementById("prev");
+  var next = document.getElementById("next");
 
-    const activeSlide = slides.querySelector("[data-active]");
-    let newIndex = [...slides.children].indexOf(activeSlide) + offset;
-    if (newIndex < 0) newIndex = slides.children.length - 1;
-    if (newIndex >= slides.children.length) newIndex = 0;
-
-    slides.children[newIndex].dataset.active = true;
-    delete activeSlide.dataset.active;
+  window.addEventListener("resize", function () {
+    sliderWidth = slider.offsetWidth;
   });
-});
+
+  var prevSlide = function () {
+    if (count > 1) {
+      count = count - 2;
+      slideList.style.left = "-" + count * sliderWidth + "px";
+      count++;
+    } else if ((count = 1)) {
+      count = items - 1;
+      slideList.style.left = "-" + count * sliderWidth + "px";
+      count++;
+    }
+  };
+
+  var nextSlide = function () {
+    if (count < items) {
+      slideList.style.left = "-" + count * sliderWidth + "px";
+      count++;
+    } else if ((count = items)) {
+      slideList.style.left = "0px";
+      count = 1;
+    }
+  };
+
+  next.addEventListener("click", function () {
+    nextSlide();
+  });
+
+  prev.addEventListener("click", function () {
+    prevSlide();
+  });
+
+  setInterval(function () {
+    nextSlide();
+  }, 5000);
+};
+
+window.onload = function () {
+  responsiveSlider();
+};
+
 //--x------ CAROUSEL SLIDER BUTTONS ------x--//
 
 // ---------- TYPEWRITER ANIMATION ---------- //
@@ -83,3 +118,29 @@ function convert(currency1, currency2, value) {
 }
 
 // --x-------- CURRENCY CONTAINER --------x-- //
+
+// STICKY NAVIGATION
+
+const sectionItinerary = document.querySelector(".section-itinerary");
+
+const obser = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obser.observe(sectionItinerary);

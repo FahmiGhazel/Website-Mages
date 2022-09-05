@@ -149,6 +149,9 @@ h3 {
 .sticky .section-hero-destination {
   margin-top: 9.6rem;
 }
+.sticky .section-itinerary {
+  margin-top: 9.6rem;
+}
 
 /* ------------ Main Content ------------ */
 
@@ -298,6 +301,11 @@ section .container .owl-nav {
   padding: 8rem 3.2rem 0 3.2rem;
   grid-template-columns: repeat(3, 1fr);
   gap: 10rem;
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15rem;
 }
 
 .heading-article {
@@ -528,6 +536,12 @@ section .container .owl-nav {
 .footer {
   padding: 12.8rem 0;
   border-top: 1px solid #eee;
+}
+
+.address,
+.year {
+  font-size: 1.4rem;
+  color: #767676;
 }
 
 .grid--footer {
@@ -1121,95 +1135,86 @@ section .container .owl-nav {
 /* --x-------    NEWSLETTER   ------x---*/
 
 /* ---------- CAROUSEL SLIDER   ----------*/
-.carousel {
-  width: 100vw;
-  height: 100vh;
+
+#slider {
   position: relative;
+  width: 144rem;
+  height: 42rem;
+  margin-bottom: 5rem;
 }
 
-.carousel > ul {
-  margin: 0;
-  padding: 0;
+#slider ul {
+  position: relative;
   list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
 }
 
-.slide {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: 200ms opacity ease-in-out;
-  transition-delay: 200ms;
+#slider ul li {
+  position: relative;
+  height: 100%;
+
+  float: left;
 }
 
-.slide > img {
-  display: block;
+#slider ul li img {
   width: 100%;
-  height: 60%;
-  object-fit: cover;
-  object-position: center;
 }
 
-.slide[data-active] {
-  opacity: 1;
-  z-index: 1;
-  transition-delay: 0ms;
-}
-
-.carousel-button {
-  position: absolute;
-  z-index: 2;
-  background: none;
-  border: none;
-  font-size: 4rem;
-  top: 35%;
-  transform: translateY(-50%);
-  color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  border-radius: 0.25rem;
-  padding: 0 0.5rem;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.carousel-button:hover,
-.carousel-button:focus {
+#slider #prev,
+#slider #next {
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  transform: translateY(-50%);
+  transition: all 150ms ease;
 }
 
-.carousel-button:focus {
-  outline: 1px solid black;
+#slider #prev {
+  left: 10px;
+}
+#slider #next {
+  right: 10px;
 }
 
-.carousel-button.prev {
-  left: 1rem;
-}
-
-.carousel-button.next {
-  right: 1rem;
+#slider #prev:hover,
+#slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
 }
 
 /* --x------- CAROUSEL SLIDER   -------x--*/
 
 /* -------------- TYPEWRITER ------------- */
-.container {
-  width: 1200px;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
+.typewriter-container {
   background: #fff;
   overflow: hidden;
+  display: block;
+  text-align: center;
 }
-.container .text {
+
+.typewriter-container .text {
   position: relative;
   color: #cf711f;
   font-size: 55px;
   font-weight: 600;
 }
-.container .text.first-text {
+.typewriter-container .text.first-text {
   color: black;
 }
 
-.container .text.sec-text {
+.typewriter-container .text.sec-text {
   margin-left: 1rem;
 }
 .text.sec-text:before {
@@ -1247,9 +1252,30 @@ section .container .owl-nav {
 
 .travel-info {
   padding-top: 1.6rem;
-  padding-bottom: 3rem;
+  margin-bottom: 7rem;
   text-align: center;
   justify-content: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info-icon {
+  color: #e67e22;
+  height: 2.2rem;
+  width: 2.2rem;
+  background-color: #fdf2e9;
+  margin-bottom: 3.2rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.info-title {
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
 }
 
 .info-box {
@@ -1261,7 +1287,7 @@ section .container .owl-nav {
 }
 
 .info-para {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 #price-information {
@@ -1280,6 +1306,7 @@ section .container .owl-nav {
   padding-bottom: 3rem;
   text-align: center;
   justify-content: center;
+  margin-bottom: 6rem;
 }
 
 .currency-exchange {
@@ -1287,6 +1314,9 @@ section .container .owl-nav {
   padding: 10px 24px;
   border-radius: 20px;
   width: 490px;
+  margin: 0 auto;
+  padding: 6rem;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.344);
 }
 
 h1 {
@@ -1310,7 +1340,7 @@ select {
   height: 40px;
   font-size: 1.2em;
   cursor: pointer;
-  background: #66ffcc;
+  background: #cf711f;
   outline: none;
   color: black;
   margin: 0.2em 0;
@@ -1342,3 +1372,5 @@ input {
   font-size: 1em;
   margin: 0.5em 0;
 }
+
+/* Travel Information */
