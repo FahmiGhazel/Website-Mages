@@ -67,10 +67,11 @@ h3 {
   height: 8.6rem;
   /* padding: 0 3.2rem; */
   position: relative;
+  padding: 1rem;
 }
 
 .logo {
-  height: 3.2rem;
+  width: 22rem;
 }
 
 .main-nav-list {
@@ -145,99 +146,9 @@ h3 {
   margin-top: 9.6rem;
 }
 
-/* --------------- navbar --------------- */
-/* .nav {
-  background: white;
-  min-height: 10vh;
-  overflow: hidden;
-  transition: height 0.9s ease-in-out;
-
-  height: 9.6rem;
-  padding: 0 4.8rem;
-  position: relative;
+.sticky .section-hero-destination {
+  margin-top: 9.6rem;
 }
-
-.nav .nav-menu {
-  justify-content: space-between;
-}
-
-.nav .toggle-collapse {
-  position: absolute;
-  top: 0%;
-  width: 95%;
-  cursor: pointer;
-  display: none;
-}
-
-.nav .toggle-collapse .toggle-icon {
-  display: flex;
-  justify-content: flex-end;
-  padding: 3.5rem 0;
-}
-
-.nav .toggle-collapse .toggle-icon i {
-  font-size: 2rem;
-  color: grey;
-}
-
-.collapse {
-  height: 50rem;
-}
-
-.nav .nav-brand a {
-  font-size: 2rem;
-  padding: 3rem 0;
-  display: block;
-  font-family: poppins;
-}
-
-.nav .nav-list {
-  /* margin: 0; */
-/* padding: 0 0;
-  display: flex;
-  list-style-type: none;
-}
-
-.nav .nav-list .nav-link {
-  padding: 3rem 1rem;
-  font-size: 1.6rem;
-  position: relative;
-  font-family: ubuntu;
-}
-
-.nav .nav-list .nav-link:hover {
-  background-color: sandybrown;
-}
-
-.nav .nav-list .nav-link:hover a {
-  color: white;
-}
-
-.nav .social {
-  padding: 3.8rem 0;
-}
-
-.nav .social i {
-  padding: 0 0.3rem;
-}
-
-.nav .social .fa-facebook-f:hover {
-  color: #3b5998;
-}
-
-.nav .social .fa-instagram:hover {
-  color: purple;
-}
-
-.nav .social .fa-twitter:hover {
-  color: #00acee;
-}
-
-.nav .social .fa-youtube:hover {
-  color: #ff0000;
-/* } */
-
-/* ----x---------- navbar ---------x----- */
 
 /* ------------ Main Content ------------ */
 
@@ -341,7 +252,7 @@ main .section-hero .site-background {
 /* ---- Article Carousel ---- */
 
 main .article {
-  height: 100vh;
+  height: 45rem;
   width: 100%;
 }
 
@@ -378,7 +289,7 @@ section .container .owl-nav {
 
 .grid {
   display: grid;
-  column-gap: 1rem;
+  column-gap: 3rem;
   row-gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -391,17 +302,20 @@ section .container .owl-nav {
 
 .heading-article {
   font-size: 3.2rem;
+  margin: 3rem;
   display: flex;
   justify-content: center;
 }
 
-.section-meals {
+.section-articles {
   padding: 3rem 0;
   position: relative;
 }
 
-.meal {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+.article {
+  /* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.053); */
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
@@ -409,16 +323,16 @@ section .container .owl-nav {
   width: 25rem;
 }
 
-.meal:hover {
+.article:hover {
   transform: translateY(-1.2rem);
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
-.meal-content {
+.article-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
-.meal-tags {
+.article-tags {
   margin-bottom: 1.2rem;
   display: flex;
   gap: 0.4rem;
@@ -444,7 +358,7 @@ section .container .owl-nav {
   background-color: #ffd43b;
 }
 
-.meal-title {
+.article-title {
   font-size: 1.8rem;
   color: #333;
   font-weight: 600;
@@ -464,7 +378,7 @@ section .container .owl-nav {
   transition: all 0.3s;
 }
 
-.meal-img {
+.article-img {
   width: 100%;
   height: 50%;
   object-fit: cover;
@@ -483,8 +397,8 @@ section .container .owl-nav {
   width: 40px;
   border-radius: 50%;
   position: absolute;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 
   display: flex;
   align-items: center;
@@ -497,6 +411,7 @@ section .container .owl-nav {
   align-self: end;
   padding: 1.2rem;
   border-radius: 15px;
+  font-size: 1.8rem;
 }
 
 .btn--form:hover {
@@ -506,16 +421,16 @@ section .container .owl-nav {
 
 .btn--left {
   /* In relation to PARENTE ELEMENT */
-  left: 7%;
-  top: 60%;
+  left: 9%;
+  top: 58%;
 
   /* In relation to ELEMENT ITSELF */
   transform: translate(-20%, -50%);
 }
 
 .btn--right {
-  right: 9%;
-  top: 60%;
+  right: 10%;
+  top: 58%;
 
   transform: translate(-20%, -50%);
 }
@@ -723,44 +638,45 @@ section .container .owl-nav {
 }
 
 .hero-description {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.6;
-  margin-bottom: 4.8rem;
+  margin: 1.2rem 3.6rem 3.2rem 0;
 }
 
 .hero-img {
   width: 100%;
 }
 
-.delivered-meals {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-  margin-top: 8rem;
+.article {
+  gap: 4rem;
 }
 
-.delivered-imgs {
+.testimony-imgs {
   display: flex;
 }
 
-.delivered-imgs img {
+.testimony-imgs img {
   height: 4.8rem;
   width: 4.8rem;
   border-radius: 50%;
-  margin-right: -1.6rem;
+  margin-right: 1.6rem;
   border: 3px solid #fdf2e9;
 }
 
-.delivered-imgs img:last-child {
+.testimony-imgs img:last-child {
   margin: 0;
 }
 
-.delivered-text {
+.testimony-text {
   font-size: 1.8rem;
   font-weight: 600;
 }
 
-.delivered-text span {
+.testimony-text-span {
+  font-size: 1.8rem;
+}
+
+.testimony-text span {
   color: #cf711f;
   font-weight: 700;
 }
@@ -801,6 +717,7 @@ section .container .owl-nav {
   /* Put transition on original "state" */
   /* transition: background-color 0.3s; */
   transition: all 0.3s;
+  margin-bottom: 4rem;
 }
 
 .btn--full:link,
@@ -865,8 +782,8 @@ section .container .owl-nav {
 
 /* GALLERY */
 
-/* .testimonial {
-  margin: 0 4rem 4rem 4rem;
+/* .testimonials {
+  row-gap: 5rem;
 } */
 
 .testimonials-container {
@@ -883,14 +800,13 @@ section .container .owl-nav {
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 5rem;
 }
 
 .testimonial-img {
   width: 6.4rem;
   border-radius: 50%;
   margin-bottom: 1.2rem;
-  margin-left: 4rem;
 }
 
 .testimonial-text {
@@ -1084,6 +1000,9 @@ section .container .owl-nav {
   border-radius: 1rem;
 }
 
+.newsletter-form .newsletter-close-btn {
+  display: none;
+}
 .container .newsletter-btn.active {
   display: none;
 }

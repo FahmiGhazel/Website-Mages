@@ -9,7 +9,7 @@ newsletterBtn.addEventListener("click", function (modalOpen) {
   newsletterBtn.classList.add("active");
 });
 newsletterBtnClose.addEventListener("click", function (modalClose) {
-  newsletter.classList.add("active");
+  newsletter.classList.remove("active");
   newsletterBtn.classList.remove("active");
 });
 //--x----- Subscribe Newsletter Popup -----x--//
@@ -27,3 +27,29 @@ function onHover() {
 function offHover() {
   $("#image1").attr("src", "images/flyer.jpg");
 }
+
+// Sticky Navigation
+
+const sectionHeroDest = document.querySelector(".section-hero-destination");
+
+const obser = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obser.observe(sectionHeroDest);

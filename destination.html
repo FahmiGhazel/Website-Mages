@@ -45,13 +45,13 @@
   <body>
     <!----------------- Navigation ----------------->
     <header class="header">
-      <a href="#">
-        <img class="logo" alt="Omnifood logo" src="images/logo.jpeg" />
+      <a href="index.html">
+        <img class="logo" alt="Travel Lobang logo" src="images/logo.png" />
       </a>
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#how">Itinerary</a></li>
+          <li><a class="main-nav-link" href="itinerary.html">Itinerary</a></li>
           <li>
             <a class="main-nav-link" href="destination.html">Destination</a>
           </li>
@@ -88,8 +88,8 @@
             <a href="#cta" class="btn--full btn--dest"
               >Explore Singapore &darr;</a
             >
-            <div class="delivered-meals">
-              <div class="delivered-imgs">
+            <div class="testimony-meals">
+              <div class="testimony-imgs">
                 <img src="images/customer-1.jpg" alt="Customer photo" />
                 <img src="images/customer-2.jpg" alt="Customer photo" />
                 <img src="images/customer-3.jpg" alt="Customer photo" />
@@ -97,8 +97,8 @@
                 <img src="images/customer-5.jpg" alt="Customer photo" />
                 <img src="images/customer-6.jpg" alt="Customer photo" />
               </div>
-              <p class="delivered-text">
-                <span>300,000+</span> tourist visits in 2021!
+              <p class="testimony-text">
+                <span class="testimony-text-span">300,000+</span> tourist visits in 2021!
               </p>
             </div>
           </div>
@@ -373,7 +373,7 @@
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
                 minus earum corrupti quod doloribus fugiat quidem molestiae, aut
                 provident incidunt. Obcaecati unde voluptatum quas fugiat itaque
-                laudantium deleniti. Laudantium asperiores mollitia aperiam
+                laudantium delenitigit. Laudantium asperiores mollitia aperiam
                 suscipit eligendi dignissimos possimus natus dolore autem
                 excepturi.
               </p>
@@ -516,8 +516,8 @@
                     <a href="#" class="new-title">New data recording system to better analyse road accidents</a>
                 </div>
             </div>
-            <div class="popup-newsletter">
-              <a href="#" class="newsletter-btn" data-aos="fade-left" data-aos-delay="100">Subscribe to our Newsletter 🔔</a>
+            <div class="popup-newsletter" id="newsletter">
+              <a href="#form" class="newsletter-btn" data-aos="fade-left" data-aos-delay="100">Subscribe to our Newsletter 🔔</a>
               <div class="newsletter">
                 <div class="newsletter-icon">
                   <i class="fa-regular fa-envelope"></i>
@@ -528,21 +528,105 @@
                   <p>Join with our 70+ Awesome 😍 Community Members</p>
                 </div>
         
-                <div class="newsletter-form">
+                <div class="newsletter-form" id="form">
                   <input type="email" name="" id="" placeholder="Your Email" required />
                   <button type="submit" id="btn">Subscribe</button>
                 </div>
         
-                <a href="#" class="newsletter-close-btn">I Don't Need It</a>
+                <a href="#newsletter" class="newsletter-close-btn">I Don't Need It</a>
               </div>
             </div>
         </div>
         <!--x-- Sidebar Popular Post --x-->
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          
+
+          
+
+          <a href="#" class="footer-logo">
+            <img class="footer-img-logo" alt="Travel Lobang logo" src="images/logo.png" />
+          </a>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by Travel-Lobang, Inc.
+            <br> All rights reserved.</br>
+          </p>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              70 Shenton Way, 079118, Singapore
+            </p>
+            <p>
+              <a class="footer-link" href="tel:62353535">62353535</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@omnifood.com"
+                >hello@travelobang.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Travel-Lobang</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
      <!----x----------- Site Content ---------x----->
 
      <script src="/destination.js"></script>
+     <script src="/general.js"></script>
+
 
     <!-- Jquery Library -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
