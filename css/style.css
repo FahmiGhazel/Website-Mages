@@ -48,6 +48,11 @@ h1 {
   font-size: 5.2rem;
 }
 
+h2 {
+  font-family: "Poppins";
+  font-size: 3.2rem;
+}
+
 h3 {
   font-family: "ubuntu";
   font-size: 3rem;
@@ -921,9 +926,9 @@ section .container .owl-nav {
 }
 
 /* ---------- SITE CONTENT ----------*/
-.site-content {
+.site-content-section {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 70fr 30fr;
   margin-top: 8rem;
 }
 
@@ -934,7 +939,7 @@ section .container .owl-nav {
 
 .site-content .post-content > .post-image,
 .post-title {
-  padding: 1rem 2rem;
+  padding: 1rem 0rem;
   position: relative;
 }
 
@@ -969,6 +974,10 @@ section .container .owl-nav {
   font-size: 2.5rem;
 }
 
+.post-content .post-title .new-title {
+  font-size: 1.5rem;
+}
+
 .site-content .pagination {
   justify-content: center;
   color: grey;
@@ -988,3 +997,320 @@ section .container .owl-nav {
 }
 
 /* ---x------ SITE CONTENT ------x---*/
+
+/* ----------    SIDEBAR   ----------*/
+.category-list {
+  font-family: poppins;
+}
+
+.list-items {
+  background: #cf711f;
+  padding: 1rem 1rem;
+  margin: 0.8rem 0;
+  border-radius: 3rem;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-items a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.list-items span {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.post-content {
+  padding: 1rem 0;
+}
+
+.popular-post h2 {
+  padding-top: 8rem;
+}
+
+.post-title a {
+  font-size: 10rem;
+  text-align: left;
+}
+
+.popular-img {
+  width: 100%;
+  height: 100%;
+}
+
+.popular-post {
+  margin-left: 5rem;
+}
+
+.category {
+  margin-left: 5rem;
+}
+/* ---x------    SIDEBAR   ------x---*/
+
+/* ----------    NEWSLETTER   ----------*/
+
+.popup-newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 520px;
+}
+
+.container .newsletter {
+  display: none;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 15px #ffffff20;
+  height: 350px;
+}
+
+.container .newsletter.active {
+  display: block;
+}
+
+.container .newsletter-btn {
+  display: block;
+  background: orange;
+  color: #ffff;
+  align-items: center;
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 1rem;
+}
+
+.container .newsletter-btn.active {
+  display: none;
+}
+
+.container .newsletter-btn:hover {
+  background: palegreen;
+}
+
+.newsletter .newsletter-icon {
+  background: orange;
+  display: inline-block;
+  padding: 12px 15px;
+  border-radius: 5rem;
+  border: 6px solid #fff;
+  position: absolute;
+  transform: translate(130px, -80px);
+}
+
+.newsletter .newsletter-icon i {
+  font-size: 40px;
+  color: #fff;
+}
+
+.newsletter .newsletter-body {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.newsletter-body p {
+  text-align: center;
+  font-size: 25px;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  margin: 20px 0px;
+}
+
+.newsletter-body p:first-child {
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: #161616;
+}
+
+.newsletter-body p:nth-child(2) {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  color: #282828;
+}
+
+.newsletter-body p:last-child {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: -0.05em;
+  color: #282828;
+}
+
+.newsletter .newsletter-form {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  width: 100%;
+}
+
+.newsletter-form input {
+  width: 100%;
+  border: 2px solid #dedede;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  border-radius: 1rem;
+  background: #ebecf090;
+}
+
+.newsletter-form input:focus {
+  outline: 0;
+}
+
+.newsletter-form button {
+  width: 50%;
+  padding: 9px 15px;
+  border: 0;
+  border-radius: 1rem;
+  margin-top: 10px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -0.03rem;
+  background-color: orange;
+  color: #fff;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  color: yellow;
+}
+
+.newsletter a {
+  text-align: center;
+  display: grid;
+  margin-top: 40px;
+  width: 100%;
+  color: #747474;
+  font-weight: 500;
+}
+
+.newsletter a:hover {
+  color: orange;
+}
+
+/* --x-------    NEWSLETTER   ------x---*/
+
+/* ---------- CAROUSEL SLIDER   ----------*/
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 35%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
+
+/* --x------- CAROUSEL SLIDER   -------x--*/
+
+/* -------------- TYPEWRITER ------------- */
+.container {
+  width: 1200px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  overflow: hidden;
+}
+.container .text {
+  position: relative;
+  color: #cf711f;
+  font-size: 55px;
+  font-weight: 600;
+}
+.container .text.first-text {
+  color: black;
+}
+
+.container .text.sec-text {
+  margin-left: 1rem;
+}
+.text.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-left: 2px solid #4070f4;
+  animation: animate 2s steps(12) infinite;
+}
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 5px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+/* ----x--------- TYPEWRITER --------x---- */

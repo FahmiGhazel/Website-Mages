@@ -37,6 +37,9 @@
       crossorigin="anonymous"
     ></script>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <title>Destinations</title>
   </head>
   <body>
@@ -103,7 +106,7 @@
 
           <!--------------- Floating Image --------------->
           <div class="slider">
-            <span style="--i: 1"><img src="images/flyer.jpg" alt="" /></span>
+            <span style="--i: 1"><img src="images/flyer.jpg" alt="" id="image1" onmouseover="onHover();" onmouseout="offHover();" onmouseover="showText();" onmouseout="hide();" /></span>
             <span style="--i: 2"
               ><img src="images/fort canning.jpg" alt=""
             /></span>
@@ -123,7 +126,7 @@
       <!---------------- Testimonials ---------------->
       <section class="section-testimonials" id="testimonials">
         <div class="testimonials-container">
-          <span class="subheading">Eat, Sleep, Travel, Repeat</span>
+          <span class="subheading">Be Kiasu, Travel More Lah!</span>
           <h2 class="heading-secondary">What great adventures look like!</h2>
 
           <div class="testimonials">
@@ -274,165 +277,282 @@
       </section>
 
       <!---------------- Site Content --------------->
-      <section class="container">
+      <section class="site-content-section container">
         <div class="site-content">
           <!----- 1st Blog Post ----->
-          <div class="posts">
-            <div class="post-content">
-              <div class="post-image">
-                <div>
-                  <img src="/images/blog1.png" alt="blog 1" class="img" />
-                </div>
-                <div class="post-info flex-row">
-                  <span
-                    ><i class="fas fa-user text-gray"></i
-                    >&nbsp;&nbsp;Admin</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-calendar-days text-gray"></i
-                    >&nbsp;&nbsp;September 11, 2022</span
-                  >
-                  <span>2 Comments</span>
-                </div>
+          <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+            <div class="post-image">
+              <div>
+                <img src="/images/blog1.png" alt="blog 1" class="img" />
               </div>
-              <div class="post-title">
-                <a href="#"
-                  >Why should boys have all the fun? It's the women who are
-                  making India an alcohol loving country</a
+              <div class="post-info flex-row">
+                <span
+                  ><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span
                 >
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Quasi minus earum corrupti quod doloribus fugiat quidem
-                  molestiae, aut provident incidunt. Obcaecati unde voluptatum
-                  quas fugiat itaque laudantium deleniti. Laudantium asperiores
-                  mollitia aperiam suscipit eligendi dignissimos possimus natus
-                  dolore autem excepturi.
-                </p>
+                <span
+                  ><i class="fa-solid fa-calendar-days text-gray"></i
+                  >&nbsp;&nbsp;September 11, 2022</span
+                >
+                <span>2 Comments</span>
               </div>
             </div>
-            <!--x-- 1st Blog Post --x-->
-            <hr />
-            <!----- 2nd Blog Post ----->
-              <div class="post-content">
+            <div class="post-title">
+              <a href="#"
+                >Why should boys have all the fun? It's the women who are making
+                India an alcohol loving country</a
+              >
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+                minus earum corrupti quod doloribus fugiat quidem molestiae, aut
+                provident incidunt. Obcaecati unde voluptatum quas fugiat itaque
+                laudantium deleniti. Laudantium asperiores mollitia aperiam
+                suscipit eligendi dignissimos possimus natus dolore autem
+                excepturi.
+              </p>
+            </div>
+          </div>
+          <!--x-- 1st Blog Post --x-->
+          <hr />
+          <!----- 2nd Blog Post ----->
+          <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+            <div class="post-image">
+              <div>
+                <img src="/images/blog2.png" alt="blog 1" class="img" />
+              </div>
+              <div class="post-info flex-row">
+                <span
+                  ><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span
+                >
+                <span
+                  ><i class="fa-solid fa-calendar-days text-gray"></i
+                  >&nbsp;&nbsp;September 11, 2022</span
+                >
+                <span>2 Comments</span>
+              </div>
+            </div>
+            <div class="post-title">
+              <a href="#"
+                >Why should boys have all the fun? It's the women who are making
+                India an alcohol loving country</a
+              >
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+                minus earum corrupti quod doloribus fugiat quidem molestiae, aut
+                provident incidunt. Obcaecati unde voluptatum quas fugiat itaque
+                laudantium deleniti. Laudantium asperiores mollitia aperiam
+                suscipit eligendi dignissimos possimus natus dolore autem
+                excepturi.
+              </p>
+            </div>
+          </div>
+          <!--x-- 2nd Blog Post --x-->
+          <hr />
+          <!----- 3rd Blog Post ----->
+          <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+            <div class="post-image">
+              <div>
+                <img src="/images/blog3.png" alt="blog 1" class="img" />
+              </div>
+              <div class="post-info flex-row">
+                <span
+                  ><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span
+                >
+                <span
+                  ><i class="fa-solid fa-calendar-days text-gray"></i
+                  >&nbsp;&nbsp;September 11, 2022</span
+                >
+                <span>2 Comments</span>
+              </div>
+            </div>
+            <div class="post-title">
+              <a href="#"
+                >Why should boys have all the fun? It's the women who are making
+                India an alcohol loving country</a
+              >
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+                minus earum corrupti quod doloribus fugiat quidem molestiae, aut
+                provident incidunt. Obcaecati unde voluptatum quas fugiat itaque
+                laudantium deleniti. Laudantium asperiores mollitia aperiam
+                suscipit eligendi dignissimos possimus natus dolore autem
+                excepturi.
+              </p>
+            </div>
+          </div>
+          <!--x-- 3rd Blog Post --x-->
+          <hr />
+          <!----- 4th Blog Post ----->
+          <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+            <div class="post-image">
+              <div>
+                <img src="/images/blog4.png" alt="blog 1" class="img" />
+              </div>
+              <div class="post-info flex-row">
+                <span
+                  ><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span
+                >
+                <span
+                  ><i class="fa-solid fa-calendar-days text-gray"></i
+                  >&nbsp;&nbsp;September 11, 2022</span
+                >
+                <span>2 Comments</span>
+              </div>
+            </div>
+            <div class="post-title">
+              <a href="#"
+                >Why should boys have all the fun? It's the women who are making
+                India an alcohol loving country</a
+              >
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+                minus earum corrupti quod doloribus fugiat quidem molestiae, aut
+                provident incidunt. Obcaecati unde voluptatum quas fugiat itaque
+                laudantium deleniti. Laudantium asperiores mollitia aperiam
+                suscipit eligendi dignissimos possimus natus dolore autem
+                excepturi.
+              </p>
+            </div>
+            <div class="pagination flex-row">
+              <a href="#"><i class="fas fa-chevron-left"></i></a>
+              <a href="#" class="pages">1</a>
+              <a href="#" class="pages">2</a>
+              <a href="#" class="pages">3</a>
+              <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+          <!--x-- 4th Blog Post --x-->
+        </div>
+
+        <!----- Sidebar Category ----->
+        <aside class="sidebar">
+          <div class="category">
+              <h2>Category</h2>
+              <ul class="category-list">
+                  <li class="list-items" data-aos="fade-left" data-aos-delay="100">
+                      <a href="#">Software</a>
+                      <span>(05)</span>
+                  </li>
+                  <li class="list-items" data-aos="fade-left" data-aos-delay="200">
+                      <a href="#">Techonlogy</a>
+                      <span>(02)</span>
+                  </li>
+                  <li class="list-items" data-aos="fade-left" data-aos-delay="300">
+                      <a href="#">Lifestyle</a>
+                      <span>(07)</span>
+                  </li>
+                  <li class="list-items" data-aos="fade-left" data-aos-delay="400">
+                      <a href="#">Shopping</a>
+                      <span>(01)</span>
+                  </li>
+                  <li class="list-items" data-aos="fade-left" data-aos-delay="500">
+                      <a href="#">Food</a>
+                      <span>(08)</span>
+                  </li>
+              </ul>
+          </div>
+           <!--x-- Sidebar Category --x-->
+
+
+          <!----- Sidebar Popular Post ----->
+          <div class="popular-post">
+            <h2>Popular Post</h2>
+            <div class="post-content" data-aos="flip-up" data-aos-delay="200">
                 <div class="post-image">
-                  <div>
-                    <img src="/images/blog2.png" alt="blog 1" class="img" />
-                  </div>
-                  <div class="post-info flex-row">
-                    <span
-                      ><i class="fas fa-user text-gray"></i
-                      >&nbsp;&nbsp;Admin</span
-                    >
-                    <span
-                      ><i class="fa-solid fa-calendar-days text-gray"></i
-                      >&nbsp;&nbsp;September 11, 2022</span
-                    >
-                    <span>2 Comments</span>
-                  </div>
+                    <div>
+                        <img src="/images/blog4.png" class="popular-img" alt="blog1">
+                    </div>
+                    <div class="post-info flex-row">
+                        <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+                            2019</span>
+                        <span>2 Commets</span>
+                    </div>
                 </div>
                 <div class="post-title">
-                  <a href="#"
-                    >Why should boys have all the fun? It's the women who are
-                    making India an alcohol loving country</a
-                  >
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quasi minus earum corrupti quod doloribus fugiat quidem
-                    molestiae, aut provident incidunt. Obcaecati unde voluptatum
-                    quas fugiat itaque laudantium deleniti. Laudantium asperiores
-                    mollitia aperiam suscipit eligendi dignissimos possimus natus
-                    dolore autem excepturi.
-                  </p>
+                    <a href ="#" class="new-title">New data recording system to better analyse road accidents</a>
                 </div>
-              </div>
-            <!--x-- 2nd Blog Post --x-->
-              <hr />
-            <!----- 3rd Blog Post ----->
-              <div class="post-content">
+            </div>
+            <div class="post-content" data-aos="flip-up" data-aos-delay="300">
                 <div class="post-image">
-                  <div>
-                    <img src="/images/blog3.png" alt="blog 1" class="img" />
-                  </div>
-                  <div class="post-info flex-row">
-                    <span
-                      ><i class="fas fa-user text-gray"></i
-                      >&nbsp;&nbsp;Admin</span
-                    >
-                    <span
-                      ><i class="fa-solid fa-calendar-days text-gray"></i
-                      >&nbsp;&nbsp;September 11, 2022</span
-                    >
-                    <span>2 Comments</span>
-                  </div>
+                    <div>
+                        <img src="/images/blog3.png" class="popular-img" alt="blog1">
+                    </div>
+                    <div class="post-info flex-row">
+                        <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+                            2019</span>
+                        <span>2 Commets</span>
+                    </div>
                 </div>
                 <div class="post-title">
-                  <a href="#"
-                    >Why should boys have all the fun? It's the women who are
-                    making India an alcohol loving country</a
-                  >
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quasi minus earum corrupti quod doloribus fugiat quidem
-                    molestiae, aut provident incidunt. Obcaecati unde voluptatum
-                    quas fugiat itaque laudantium deleniti. Laudantium asperiores
-                    mollitia aperiam suscipit eligendi dignissimos possimus natus
-                    dolore autem excepturi.
-                  </p>
+                    <a href="#" class="new-title">New data recording system to better analyse road accidents</a>
                 </div>
-              </div>
-            <!--x-- 3rd Blog Post --x-->
-              <hr />
-            <!----- 4th Blog Post ----->
-              <div class="post-content">
+            </div>
+            <div class="post-content" data-aos="flip-up" data-aos-delay="400">
                 <div class="post-image">
-                  <div>
-                    <img src="/images/blog4.png" alt="blog 1" class="img" />
-                  </div>
-                  <div class="post-info flex-row">
-                    <span
-                      ><i class="fas fa-user text-gray"></i
-                      >&nbsp;&nbsp;Admin</span
-                    >
-                    <span
-                      ><i class="fa-solid fa-calendar-days text-gray"></i
-                      >&nbsp;&nbsp;September 11, 2022</span
-                    >
-                    <span>2 Comments</span>
-                  </div>
+                    <div>
+                        <img src="/images/blog2.png" class="popular-img" alt="blog1">
+                    </div>
+                    <div class="post-info flex-row">
+                        <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+                            2019</span>
+                        <span>2 Commets</span>
+                    </div>
                 </div>
                 <div class="post-title">
-                  <a href="#"
-                    >Why should boys have all the fun? It's the women who are
-                    making India an alcohol loving country</a
-                  >
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quasi minus earum corrupti quod doloribus fugiat quidem
-                    molestiae, aut provident incidunt. Obcaecati unde voluptatum
-                    quas fugiat itaque laudantium deleniti. Laudantium asperiores
-                    mollitia aperiam suscipit eligendi dignissimos possimus natus
-                    dolore autem excepturi.
-                  </p>
+                    <a href="#" class="new-title">New data recording system to better analyse road accidents</a>
                 </div>
-                <div class="pagination flex-row">
-                  <a href="#"><i class="fas fa-chevron-left"></i></a>
-                  <a href="#" class="pages">1</a>
-                  <a href="#" class="pages">2</a>
-                  <a href="#" class="pages">3</a>
-                  <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="post-content" data-aos="flip-up" data-aos-delay="500">
+                <div class="post-image">
+                    <div>
+                        <img src="/images/blog1.png" class="popular-img" alt="blog1">
+                    </div>
+                    <div class="post-info flex-row">
+                        <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+                            2019</span>
+                        <span>2 Commets</span>
+                    </div>
                 </div>
+                <div class="post-title">
+                    <a href="#" class="new-title">New data recording system to better analyse road accidents</a>
+                </div>
+            </div>
+            <div class="popup-newsletter">
+              <a href="#" class="newsletter-btn" data-aos="fade-left" data-aos-delay="100">Subscribe to our Newsletter 🔔</a>
+              <div class="newsletter">
+                <div class="newsletter-icon">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="newsletter-body">
+                  <p>Subscribe</p>
+                  <p>To Our Newsletter</p>
+                  <p>Join with our 70+ Awesome 😍 Community Members</p>
+                </div>
+        
+                <div class="newsletter-form">
+                  <input type="email" name="" id="" placeholder="Your Email" required />
+                  <button type="submit" id="btn">Subscribe</button>
+                </div>
+        
+                <a href="#" class="newsletter-close-btn">I Don't Need It</a>
               </div>
-              <aside class="sidebar">
-                  <h1>Sidebar</h1>
-                </aside>
-              </div>
-            <!--x-- 4th Blog Post --x-->
+            </div>
+        </div>
+        <!--x-- Sidebar Popular Post --x-->
       </section>
-      <!----x----------- Site Content ---------x----->
     </main>
+     <!----x----------- Site Content ---------x----->
+
+     <script src="/destination.js"></script>
 
     <!-- Jquery Library -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="./index.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+    
   </body>
 </html>
