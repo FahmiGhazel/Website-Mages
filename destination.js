@@ -44,13 +44,27 @@ btn.addEventListener("click", function () {
 });
 //--x--- Thank You Alert upon Subscribe ---x--//
 
-function onHover() {
-  $("#image1").attr("src", "images/garden.jpg");
+//-------------- Image onHover --------------//
+
+function changeImage() {
+  const displayImage = document.getElementById("image1");
+  if (displayImage.src.match("/images/flyer.jpg")) {
+    displayImage.src = "/images/flyer-2.jpg";
+  } else {
+    displayImage.src = "/images/flyer.jpg";
+  }
 }
 
-function offHover() {
-  $("#image1").attr("src", "images/flyer.jpg");
+function changeImages() {
+  const displayImages = document.getElementById("image2");
+  if (displayImages.src.match("/images/sentosa.jpg")) {
+    displayImages.src = "/images/sentosa-2.jpg";
+  } else {
+    displayImages.src = "/images/sentosa.jpg";
+  }
 }
+
+//---x---------- Image onHover ---------x----//
 
 // Sticky Navigation
 
