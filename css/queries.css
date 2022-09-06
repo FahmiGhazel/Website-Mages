@@ -115,11 +115,48 @@
 }
 
 /**************************/
-/* BELOW 618px (Tablets) */
+/* BELOW 817 (Tablets) */
 /**************************/
 
-@media (max-width: 38em) {
+@media (max-width: 51em) {
   .grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  main .article {
+    height: 36rem;
+    width: 30rem;
+    align-self: end;
+  }
+
+  .feature-title,
+  .feature-text {
+    font-size: 1.2rem;
+  }
+
+  .feature-icon {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+
+  .address,
+  .year,
+  .copyright,
+  .footer-heading,
+  .contacts {
+    font-size: 1rem;
+  }
+
+  .footer .footer-link {
+    font-size: 1rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
