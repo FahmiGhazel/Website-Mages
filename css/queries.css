@@ -1,3 +1,7 @@
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
 @media (max-width: 59em) {
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
@@ -58,5 +62,64 @@
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
+  }
+
+  .title-1 {
+    font-size: 2.8rem;
+  }
+
+  .title-2 {
+    font-size: 3.2rem;
+  }
+
+  .heading-article {
+    font-size: 2.4rem;
+  }
+
+  .article-title {
+    font-size: 1.4rem;
+  }
+
+  .article-content {
+    padding: 3.2rem;
+  }
+
+  .author-name {
+    font-size: 1rem;
+  }
+
+  .btn--left {
+    left: 2%;
+    top: 58%;
+
+    /* In relation to ELEMENT ITSELF */
+    transform: translate(-20%, -50%);
+  }
+
+  .btn--right {
+    right: 1%;
+    top: 58%;
+
+    transform: translate(-20%, -50%);
+  }
+
+  .feature-title,
+  .feature-text {
+    font-size: 1.6rem;
+  }
+
+  .feature-icon {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+}
+
+/**************************/
+/* BELOW 618px (Tablets) */
+/**************************/
+
+@media (max-width: 38em) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
   }
 }

@@ -16,6 +16,11 @@
   letter-spacing: -0.5px;
 }
 
+.heading-primary {
+  color: #333;
+  margin-left: 0;
+}
+
 .subheading {
   display: block;
   font-size: 1.6rem;
@@ -72,6 +77,10 @@ h3 {
 
 .logo {
   width: 22rem;
+}
+
+.main-nav {
+  z-index: 999;
 }
 
 .main-nav-list {
@@ -193,7 +202,7 @@ main .section-hero {
 }
 
 .input-open {
-  width: 20vh;
+  width: 30vh;
   padding: 0 50px;
   margin-right: 10px;
 }
@@ -511,7 +520,7 @@ section .container .owl-nav {
 .cta-form select {
   width: 100%;
   padding: 1.2rem;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-family: inherit;
   color: inherit;
   border: none;
@@ -1326,6 +1335,9 @@ h1 {
   font-family: sans-serif;
 }
 
+.title-2 {
+  color: white;
+}
 .currency-exchange .box {
   width: 100%;
   display: flex;
